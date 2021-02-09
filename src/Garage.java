@@ -5,20 +5,19 @@ class Automobile {
     public void sayHello() {
         System.out.println("Hello From AutoMobile");
     }
+
+    public static void sayBye() {
+        System.out.println("Bye from Automobile");
+    }
 }
 
 class Car extends Automobile {
     private int x = 20;
-
-    public void sayHello() {
-        System.out.println("Hello From Car");
-    }
 }
 public class Garage{
     public static void main(String[] args) {
         Car car = new Car();
-        car.sayHello();
-        System.out.println("x = " + car.x);
+//        System.out.println("x = " + car.x);
         Automobile automobile = (Automobile) car;
         System.out.println("x = " + automobile.x);
 
